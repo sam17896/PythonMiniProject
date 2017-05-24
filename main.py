@@ -6,8 +6,10 @@ max = 6
 while(True):
     value = random.randint(min, max)
     print("die rolled " + str(value))
-    print("You want to roll again?")
-    print("prgram")
-    break
-
+    print()
+    response = input("You want to roll again?\n")
+    if response == 'Y' or response == 'y':
+        continue
+    else:
+        break
 
